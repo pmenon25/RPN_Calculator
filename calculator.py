@@ -5,13 +5,11 @@ def calculator(inputs):
         - inputs: It includes the operand and the operator as a string
         - split through the inputs and loop through it to segregate the operands
     """
-    input =  inputs.split(' ')
     value = []
     result = 0
     operarnd1 = 0
     operarnd2 = 0
- 
-    for i in input:        
+    for i in inputs:        
         if i.isdigit() or (i.startswith('-') and i[1:].isdigit()):
             value.append(float(i))
         else:
